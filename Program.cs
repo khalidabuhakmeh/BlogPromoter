@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
+using System.ServiceModel.Syndication;
 using System.Xml;
 using Microsoft.Extensions.Configuration;
-using Terradue.ServiceModel.Syndication;
 using TweetSharp;
 
 namespace BlogPromoter
