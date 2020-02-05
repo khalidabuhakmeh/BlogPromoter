@@ -51,7 +51,7 @@ namespace BlogPromoter
                 .Trim();
             
             var status =
-                $"{exclamation} \"{post.Title.Text}\" ({post.PublishDate.Date.ToShortDateString()}) by {twitter} {hashTags} RTs appreciated. {post.Links[0].Uri} (${DateTime.Now.ToShortDateString()})";
+                $"{exclamation} \"{post.Title.Text}\" ({post.PublishDate.Date.ToShortDateString()}) by {twitter} {hashTags} RTs appreciated. {post.Links[0].Uri} ({DateTime.Now.ToShortDateString()})";
 
             var service = new TwitterService(
                 Configuration["twitter_consumer_key"],
