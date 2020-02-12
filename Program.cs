@@ -32,7 +32,10 @@ namespace BlogPromoter
             var feed = SyndicationFeed.Load(reader);
 
             var post = feed
-                .Items
+                .Items 
+                // don't promote anything labeled general
+                .Where(x => !x.Categories.Any(c => c.Label.Contains("general", StringComparison.OrdinalIgnoreCase)))
+                // randomly order my posts
                 .OrderBy(x => Guid.NewGuid())
                 .FirstOrDefault();
 
