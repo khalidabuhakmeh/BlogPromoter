@@ -17,8 +17,6 @@ namespace BlogPromoter
         private static readonly string[] Exclamations = new[]
         {
             "Check it out!",
-            "Great post!",
-            "Interesting post.",
             "I wrote",
             "ICYMI"
         };
